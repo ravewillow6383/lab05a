@@ -10,18 +10,18 @@ Test this function by hand in the console to get it working, and when you think 
 // Write your code here
 function sum(a, b) { //eslint-disable-line
   // Return an array
-   // first element is the sum of the numbers
-   // second element a string based on example
-   var result = [];
-   result[0] = a + b;
-   // result[1] = "The sum of " + a + " and " + b + " is " + result[0];
-   result[1] = `The sum of ${a} and ${b} is ${result[0]}.`;
-   return result;
+  // first element is the sum of the numbers
+  // second element a string based on example
+  var result = [];
+  result[0] = a + b;
+  // result[1] = "The sum of " + a + " and " + b + " is " + result[0];
+  result[1] = `The sum of ${a} and ${b} is ${result[0]}.`;
+  return result;
 }
 
 // Here is the test for sum(); uncomment it to run it
 testSum(4, 7);
- 
+
 // This is a comment for my first question, which we did in class.
 
 // Once you get the test passing, do an a-c-p cycle and synchronize the code between GitHub and your laptop. Don't forget to create a new branch for your work on the next question!
@@ -36,7 +36,10 @@ Test this function by hand in the console to get it working, and when you think 
 
 // Write your code here
 function multiply(a, b) { //eslint-disable-line
-
+  var resultMultiply = [];
+  resultMultiply[0] = a * b;
+  resultMultiply[1] = `The product of ${a} and ${b} is ${resultMultiply[0]}.`;
+  return resultMultiply;
 
 }
 
@@ -107,7 +110,7 @@ function multiplyArray(multArr) { //eslint-disable-line
 // Here is the test for multiplyArray(); uncomment it to run it
 // testMultiplyArray(testArray);
 
-// Once you get the test passing, do an a-c-p cycle and synchronize the code between GitHub and your laptop. 
+// Once you get the test passing, do an a-c-p cycle and synchronize the code between GitHub and your laptop.
 
 // You're done! Submit the link to the repo following the instructions in Canvas. Or, try out the stretch goal below...
 
