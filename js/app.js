@@ -143,13 +143,16 @@ Test this function by hand in the console to get it working, and when you think 
 
 // Write your code here
 var testDynamicArray = [1,2,3,4,5]; //eslint-disable-line
-
+var sum = 1;
 function multiplyAnyArray(dynamicArray) { //eslint-disable-line
+  var product = 1;
   var resultsMultiplyArray = [];
-  resultsMultiplyArray[0] = multiply(multiply(multiply(multiply (dynamicArray[0], dynamicArray[1])[0], dynamicArray[2])[0], dynamicArray[3])[0], dynamicArray[4])[0];
+  resultsMultiplyArray[0] = 
+    for(var i=0; i<dynamicArray.length; i++){
+    product=multiply(product, dynamicArray[i])[0];
+    } 
   resultsMultiplyArray[1] = `The numbers ${dynamicArray[0]},${dynamicArray[1]},${dynamicArray[2]},${dynamicArray[3]},${dynamicArray[4]} have a product of ${resultsMultiplyArray[0]}.`;
   return resultsMultiplyArray;
-
 }
 
 // Here is the test for multiplyArray(); uncomment it to run it
